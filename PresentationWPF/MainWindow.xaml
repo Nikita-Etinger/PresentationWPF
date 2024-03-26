@@ -1,0 +1,104 @@
+﻿<Window x:Class="PresentationWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Unicorns in Mythology" Height="600" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer Name="flowDocumentScrollViewer" VerticalScrollBarVisibility="Auto">
+            <FlowDocument>
+                <FlowDocument.PagePadding>
+                    <Thickness Left="50" Right="50" Top="50" Bottom="50"/>
+                </FlowDocument.PagePadding>
+
+
+                <Paragraph TextAlignment="Center" FontSize="40">
+                    <Bold>Единороги в мифологии </Bold>
+                </Paragraph>
+
+
+                <List>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink Click="Introduction_Click">Введение</Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink Click="History_Click">История</Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            <Hyperlink Click="Symbolism_Click">Символизм</Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                   
+                </List>
+                <Section>
+                    <Paragraph Name="introductionHeader" TextAlignment="Left" FontSize="18" FontWeight="Bold">Введение</Paragraph>
+                    <Paragraph>
+                        Единороги - это одни из наиболее удивительных существ в мифологии разных культур. 
+        Они часто ассоциируются с чистотой, благородством и волшебством. Встречаются упоминания о единорогах в мифологии различных народов, включая греческую, римскую, китайскую, индийскую и другие.
+                    </Paragraph>
+                    <Paragraph>
+                        Единорог обычно описывается как животное с телом лошади, ногами козла, бараньими ушами и одним длинным рогом на лбу. Рог считается символом могущества и волшебства, а также имеет целительные свойства.
+                    </Paragraph>
+                    <Paragraph>
+                        В различных мифологиях, единорог часто является символом добра и добродетели. Его изображения можно найти на гербах, в искусстве и литературе, где он предстает как существо, способное приносить удачу и защищать от зла.
+                    </Paragraph>
+                    <Paragraph>
+                        В древних легендах и мифах единорог часто ассоциируется с чистотой и девственностью. Считается, что только девственная особь может приручить единорога или увидеть его в своей жизни.
+                    </Paragraph>
+                </Section>
+                <Section>
+                    <Paragraph Name="historyHeader" TextAlignment="Left" FontSize="18" FontWeight="Bold">История</Paragraph>
+                    <Paragraph>
+                        История единорогов тесно связана с мифологией многих древних цивилизаций, включая греческую, римскую, китайскую и индийскую. Упоминания о единорогах можно найти в древних текстах, рукописях и изображениях.
+                    </Paragraph>
+                    <Paragraph>
+                        В греческой мифологии единорог часто ассоциировался с богиней Деметрой, олицетворяющей плодородие и земледелие. Римляне также видели единорогов как символ чистоты и благородства.
+                    </Paragraph>
+                    <Paragraph>
+                        В средние века в Европе единорог стал известен благодаря арабским источникам и описаниям путешественников. В те времена его рог считался ценным средством лечения и отравления.
+                    </Paragraph>
+                    <Paragraph>
+                        На изображениях единорога часто можно увидеть его в окружении природы, символизируя его связь с природой и дикой силой. Однако его внешний вид и легендарные способности могут сильно различаться в зависимости от культуры и времени.
+                    </Paragraph>
+
+                    <Paragraph>
+                        <Figure>
+                            <BlockUIContainer>
+                                <Image Source="/unicorn1.jpg" Stretch="UniformToFill" Width="400" Height="300"/>
+                            </BlockUIContainer>
+                            <Paragraph>Изображение 1: Древнегреческий единорог в окружении природы</Paragraph>
+                        </Figure>
+                    </Paragraph>
+                    <Paragraph>
+                        <Figure>
+                            <BlockUIContainer>
+                                <Image Source="/unicorn2.jpg" Stretch="UniformToFill" Width="400" Height="300"/>
+                            </BlockUIContainer>
+                            <Paragraph>Изображение 2: Единорог в средневековой европейской иконографии</Paragraph>
+                        </Figure>
+                    </Paragraph>
+                </Section>
+                <Section>
+                    <Paragraph Name="symbolismHeader" TextAlignment="Left" FontSize="18" FontWeight="Bold">Символизм</Paragraph>
+                    <Paragraph>
+                        Единороги также играют значительную роль в символизме различных культур и эпох.
+                    </Paragraph>
+                    <Paragraph>
+                        В христианской символике единорог часто ассоциируется с Христом и его добродетелями, такими как чистота и доброта.
+                    </Paragraph>
+                    <Paragraph>
+                        В средневековой алхимии и мистицизме единорог часто считался символом чистой души, стремящейся к духовной просветленности.
+                    </Paragraph>
+                    <Paragraph>
+                        В современной культуре единорог часто воспринимается как символ магии и фантазии, а его изображения используются в различных медиа-продуктах и товарах для создания атмосферы волшебства и волшебного.
+                    </Paragraph>
+
+                </Section>
+
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
